@@ -1,0 +1,16 @@
+{
+    "name": "jull/hw-03",
+    "description": "home work #3, php",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Yilia Nikolaeva",
+            "email": "nikolyulia@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
