@@ -1,7 +1,8 @@
 <?php
 
+namespace  homeWork05;
 
-class RunnableInterface
+interface RunnableInterface
 {
-
+    public function run();
 }

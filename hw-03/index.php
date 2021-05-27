@@ -6,4 +6,5 @@
 
     $bigText = new \caps\Caps();
     echo $bigText-> makeCaps('Text for example') . PHP_EOL;
-?>clear
+?>
+

@@ -1,0 +1,13 @@
+{
+    "name": "jull/hw-05",
+    "description": "home work 5",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "homeWork05\\": "core"
+        }
+    }
+}

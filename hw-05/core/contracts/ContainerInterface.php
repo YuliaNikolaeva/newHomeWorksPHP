@@ -1,7 +1,10 @@
 <?php
 
+namespace homeWork05;
 
-class ContainerInterface
+interface ContainerInterface
 {
+    public function get();
 
+    public function has();
 }
