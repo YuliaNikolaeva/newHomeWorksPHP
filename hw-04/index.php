@@ -11,4 +11,5 @@ echo $car->lghtInCabin() . PHP_EOL;
 echo $car->lghtInCabin() . PHP_EOL;
 echo $car->headlights() . PHP_EOL;
 echo $car->headlights() . PHP_EOL;
+echo $car->stop() . PHP_EOL;
 

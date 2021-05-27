@@ -8,15 +8,22 @@ class Car implements  MovableInterface, LightavebleInterface
     protected $maxSpeed = 200;
     public $islghtInCabin = false;
     public $isHeadlights = false;
+    public $isRun = false;
 
     public function start()
     {
-        return 'Ваша машина включена ';
+        if(!$this->isRun) {
+            $this->isRun = true;
+            return 'Ваша машина включена';
+        }
     }
 
     public function stop()
     {
-        return 'Ваша машина выключена';
+        if($this->isRun) {
+            $this->isRun = false;
+            return  'Ваша машина выключена';
+        }
     }
 
     public function up($speed)
@@ -25,7 +32,6 @@ class Car implements  MovableInterface, LightavebleInterface
         if($this->speed > $this->maxSpeed) {
             $this->speed = $this->maxSpeed;
         }
-
         return 'Ваша скорость ' . $this->speed . ' км в час';
     }
 
@@ -50,3 +56,4 @@ class Car implements  MovableInterface, LightavebleInterface
         return $this->isHeadlights ? 'Фары включены' : 'Фары вылючены';
     }
 }
+
